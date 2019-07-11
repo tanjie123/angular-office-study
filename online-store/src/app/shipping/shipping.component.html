@@ -1,0 +1,8 @@
+<h2>运费</h2>
+<div *ngFor="let shipping of shippings | async">
+  <hr>
+  <p>{{shipping.type}}</p>
+  <p>{{shipping.price}}</p>
+
+</div>
+<hr>
