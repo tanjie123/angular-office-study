@@ -8,6 +8,8 @@
 
 通过完成官网示例中的[在线商店](<https://angular.cn/start>)和[英雄指南](<https://angular.cn/tutorial>)两个案例掌握Angular的功能特性。
 
+
+
 ## 实验工程
 
 1. online-store
@@ -37,7 +39,55 @@ CartComponent是购物车组件，点击导航栏视图上的Checkout按钮后�
 
 ### Angular功能特性
 
+#### Angular Cli
+
+Angular Cli是Angular平台为开发者提供的快速构建Angular应用的命令行工具，通过该工具能够快速的生成应用、组件、服务、模块、模型等。
+
+Angular Cli命令列表：
+
+```shell
+ng serve --open  # start applicaiton
+
+
+```
+
+
+
 #### 组件
 
 组件（Component）是Angular对视图的抽象，通过组件组合的方式向用户展现出各种不同的视图。组件包含两个核心内容，组件类（Component Class）和视图模板（Html Template）。
+
+#### 指令
+
+##### 结构型指令
+
+*ngFor、*ngIf
+
+##### 属性绑定
+
+属性绑定语法：[]
+
+解释：将指定的值赋值给模板的属性。
+
+例如：
+
+```
+<a [title]="product.name + ' details'">
+   {{ product.name }}
+</a>
+```
+
+##### 插值表达式
+
+插值表达式语法：{{}}
+
+解释：将组件属性的值渲染为文本。
+
+例如:
+
+```
+<a [title]="product.name + ' details'">
+   {{ product.name }}
+</a>
+```
 
