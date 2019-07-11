@@ -12,10 +12,13 @@
 
 ## 实验工程
 
-1. online-store
-2. heroes-tutoturial
+- online-store  
 
+  在线商店项目（online-store），是一个简易的Angular上手应用，它包含了组件、模板语法、路由、服务以及通过http访问数据等，但是格式更简单。
 
+- heroes-toturial
+
+  应用指南（heroes-toturial），是一个比在线商店更复杂的应用实例。
 
 ## 在线商店项目
 
@@ -38,6 +41,17 @@ ProductAlertsComponent是产品提醒组件，当某一产品的价格大于特�
 ProductDetailComponent是产品详情组件，用于显示某个特定的产品详情信息。
 
 CartComponent是购物车组件，点击导航栏视图上的Checkout按钮后跳转到购物车视图。
+
+
+
+## 应用指南项目
+
+### 介绍
+
+英雄指南项目是一个用来管理一群英雄的应用，其中包括获取并显示英雄列表，编辑所选英雄详情，并且在英雄数据的不同视图之间导航。其中包含组件如下：
+
+- DashboardComponent，该组件用于展示最勇敢的英雄
+- HeroesListComponent，该组件是英雄列表视图
 
 ### Angular功能特性
 
