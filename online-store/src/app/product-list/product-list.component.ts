@@ -29,7 +29,7 @@ export class ProductListComponent implements OnInit {
   ngOnInit() {
   }
 
-  test() {
-
+  share(product) {
+    alert(product.name + "已经被分享了！");
   }
 }
