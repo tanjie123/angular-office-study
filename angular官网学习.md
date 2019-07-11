@@ -142,3 +142,19 @@ ng serve --open  # start applicaiton
 
 **服务**（service）是Angular应用中用来管理组件数据的模块，通常第三方的数据都是通过**服务**来加载和处理，然后由组件调用。
 
+#### HttpClient
+
+Angular默认集成了HttpClient，用于远程服务调用。
+
+#### 表单
+
+Angular 中的表单采用了基于 HTML 表单的标准功能，并添加了一个编排层，以帮助你创建自定义表单控件，并提供了出色的验证体验。Angular 响应式表单有两个部分，组件中那些用于存储和管理表单的对象，以及表单在模板中的可视化。
+
+
+
+#### 本地构建
+
+```
+npm install -g @angular/cli
+```
+
