@@ -33,6 +33,8 @@ NavbarComponent是导航栏组件，可以将当前视图导航到支付视图�
 
 ProductListComponent是产品列表组件，用于显示产品列表信息。
 
+ProductAlertsComponent是产品提醒组件，当某一产品的价格大于特定值时提供用户。
+
 ProductDetailComponent是产品详情组件，用于显示某个特定的产品详情信息。
 
 CartComponent是购物车组件，点击导航栏视图上的Checkout按钮后跳转到购物车视图。
@@ -90,4 +92,47 @@ ng serve --open  # start applicaiton
    {{ product.name }}
 </a>
 ```
+
+##### 事件绑定
+
+事件绑定语法：()
+
+解释：将某事件绑定到当前组件的特定方法。
+
+例如：
+
+```
+<button (click)="share(product)">分享</button>
+```
+
+##### 监听子组件事件
+
+步骤：
+
+1.在子组件中定义发送事件，例如：
+
+```
+@Output()
+  notify = new EventEmitter();
+```
+
+此处，定义了一个名叫notify的事件，它需要被@Output()注解。
+
+2.在父组件的视图模板中引用子组件，并将事件绑定到指定的方法
+
+```
+<app-product-alerts [product]="product" (notify)="onNotify(product)"></app-product-alerts>
+```
+
+此处，将当前组件的onNotify()方法绑定到子组件的notify事件上，当子组件的notify事件发生时，该方法会响应。
+
+#### 路由
+
+路由器可以让我们在浏览器的应用中从一个视图导航到另一个视图。Angular路由器会根据浏览器上的URL和你定义的路由表来决定如何显示组件。导航的方式分为三种：
+
+1.通过浏览器URL地址栏导航
+
+2.通过页面上的链接导航
+
+3.通过浏览器上的前进和后退按钮导航
 
