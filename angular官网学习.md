@@ -21,7 +21,7 @@
 
 ### 介绍
 
-在线商店（onlie-store）是一个包含导航栏、产品列表、产品详情、购物车和支付功能的示例项目。其中，组件设计如下：![组件分类](C:\Users\tanji\tanjie\git_workspace\angular-office-study\design\online-store\组件分类.png)
+在线商店（onlie-store）是一个包含导航栏、产品列表、产品详情、购物车和支付功能的示例项目。其中，组件设计如下：![组件分类](.\design\online-store\组件分类.png)
 
 
 
