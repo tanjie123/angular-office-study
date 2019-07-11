@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { CartService } from "../cart.service";
 import { PRODUCTS } from '../product-list/product-list.component';
+
 
 @Component({
   selector: 'app-product-detail',
@@ -9,7 +11,7 @@ import { PRODUCTS } from '../product-list/product-list.component';
 })
 export class ProductDetailComponent implements OnInit {
   product;
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private cartService: CartService) { }
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
@@ -17,5 +19,8 @@ export class ProductDetailComponent implements OnInit {
     });
   }
 
+  addCart(product) {
+    this.cartService.addCart(product);
+  }
 
 }
